@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{2ad8089a-48b8-4dc7-99d3-263021f32717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Math">
+      <UniqueIdentifier>{801bd01d-5270-42ff-90d7-46a4fb985fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Camera">
+      <UniqueIdentifier>{81508823-1cd6-41e1-a0a9-2973a1e80869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Render">
+      <UniqueIdentifier>{943580e0-abf5-48c5-a783-87def634e124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{543c0ebd-4943-48fc-a469-99e6c0c52f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win">
+      <UniqueIdentifier>{7dc7eb97-75cc-46fe-8296-822646c2c5f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Object">
+      <UniqueIdentifier>{fd4f45a9-2c7e-4b1a-9c88-72d7635f7735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Graphics">
+      <UniqueIdentifier>{05196a42-f310-4a16-9813-beed4b894e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Graphics\Win">
+      <UniqueIdentifier>{15101e0e-ba8c-4b02-87aa-75c63ed3e227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\SceneGraph">
+      <UniqueIdentifier>{9e05eacc-4816-45e1-87dd-64814a3a6a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\SceneGraph\Geometry">
+      <UniqueIdentifier>{70a46d1f-7ee8-4afc-9742-8fd82d1d8fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Utilities">
+      <UniqueIdentifier>{04081af3-e24b-49bd-826e-9b06243205bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\runtime\camera\Camera.cpp">
+      <Filter>Runtime\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\MathUtil.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\Matrix3.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\Matrix4.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\Random.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\Vector3.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\Vector4.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\Application.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\WindowApplication.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Platform\Win\WinSoftApplication.cpp">
+      <Filter>Platform\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Object\Main.cpp">
+      <Filter>Runtime\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Platform\Win\DemoApp.cpp">
+      <Filter>Platform\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\Renderer.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\FrameBuffer.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\WinSoftRenderer.cpp">
+      <Filter>Runtime\Graphics\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\SoftFrameBuffer.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\SoftRenderer.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\runtime\math\ColorRGBA.cpp">
+      <Filter>Runtime\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\IndexBuffer.cpp">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\Vertex.cpp">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\VertexBuffer.cpp">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\Geometry.cpp">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\Polyline.cpp">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\Polypoint.cpp">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\SceneGraph\TriMesh.cpp">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\SoftRendererDraw.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\WindowApplication3D.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Utilities\File.cpp">
+      <Filter>Runtime\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Runtime\Graphics\Image.cpp">
+      <Filter>Runtime\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\platform\Application.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\camera\Camera.h">
+      <Filter>Runtime\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\MathUtil.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Matrix3.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Matrix4.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Precision.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Quaternion.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Random.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Rect.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Vector3.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Vector4.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\WindowApplication.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\MainMCR.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Platform\Win\DemoApp.h">
+      <Filter>Platform\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Platform\ApplicationMCR.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Object\Main.h">
+      <Filter>Runtime\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\ColorRGBA.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\Renderer.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\FrameBuffer.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\WinSoftRenderer.h">
+      <Filter>Runtime\Graphics\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\SoftFrameBuffer.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\SoftRenderer.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\Vertex.h">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\IndexBuffer.h">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\VertexBuffer.h">
+      <Filter>Runtime\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\runtime\math\Triangle3.h">
+      <Filter>Runtime\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\Geometry.h">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\Polyline.h">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\Polypoint.h">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\SceneGraph\TriMesh.h">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\WindowApplication3D.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Utilities\File.h">
+      <Filter>Runtime\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Runtime\Graphics\Image.h">
+      <Filter>Runtime\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\platform\WindowApplication.inl">
+      <Filter>Platform</Filter>
+    </None>
+    <None Include="..\..\Runtime\Graphics\Renderer.inl">
+      <Filter>Runtime\Graphics</Filter>
+    </None>
+    <None Include="..\..\Runtime\Graphics\SoftRenderBuffer.inl">
+      <Filter>Runtime\Graphics</Filter>
+    </None>
+    <None Include="..\..\Runtime\Graphics\SoftRenderer.inl">
+      <Filter>Runtime\Graphics</Filter>
+    </None>
+    <None Include="..\..\Runtime\SceneGraph\IndexBuffer.inl">
+      <Filter>Runtime\SceneGraph</Filter>
+    </None>
+    <None Include="..\..\Runtime\SceneGraph\Vertex.inl">
+      <Filter>Runtime\SceneGraph</Filter>
+    </None>
+    <None Include="..\..\Runtime\SceneGraph\VertexBuffer.inl">
+      <Filter>Runtime\SceneGraph</Filter>
+    </None>
+    <None Include="..\..\runtime\math\Triangle3.cpp">
+      <Filter>Runtime\Math</Filter>
+    </None>
+    <None Include="..\..\Runtime\SceneGraph\Polyline.inl">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </None>
+    <None Include="..\..\Runtime\SceneGraph\TriMesh.inl">
+      <Filter>Runtime\SceneGraph\Geometry</Filter>
+    </None>
+    <None Include="..\..\runtime\camera\Camera.inl">
+      <Filter>Runtime\Camera</Filter>
+    </None>
+  </ItemGroup>
+</Project>

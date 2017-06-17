@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D7224E09-D173-49BB-A6D0-3361CBAE6DA0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;NOMINMAXNOMINMAX_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../Runtime;../../Platform;../../ThirdParty/tinyobjloader-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;NOMINMAXNOMINMAXNDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Runtime;../../Platform;../../ThirdParty/tinyobjloader-master;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\platform\Application.cpp" />
+    <ClCompile Include="..\..\platform\WindowApplication.cpp" />
+    <ClCompile Include="..\..\platform\WindowApplication3D.cpp" />
+    <ClCompile Include="..\..\Platform\Win\DemoApp.cpp" />
+    <ClCompile Include="..\..\Platform\Win\WinSoftApplication.cpp" />
+    <ClCompile Include="..\..\runtime\camera\Camera.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\FrameBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\Image.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\Renderer.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\SoftFrameBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\SoftRenderer.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\SoftRendererDraw.cpp" />
+    <ClCompile Include="..\..\Runtime\Graphics\WinSoftRenderer.cpp" />
+    <ClCompile Include="..\..\runtime\math\ColorRGBA.cpp" />
+    <ClCompile Include="..\..\runtime\math\MathUtil.cpp" />
+    <ClCompile Include="..\..\runtime\math\Matrix3.cpp" />
+    <ClCompile Include="..\..\runtime\math\Matrix4.cpp" />
+    <ClCompile Include="..\..\runtime\math\Random.cpp" />
+    <ClCompile Include="..\..\runtime\math\Vector3.cpp" />
+    <ClCompile Include="..\..\runtime\math\Vector4.cpp" />
+    <ClCompile Include="..\..\Runtime\Object\Main.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\Polyline.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\Polypoint.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\TriMesh.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\Vertex.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\Geometry.cpp" />
+    <ClCompile Include="..\..\Runtime\SceneGraph\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\Runtime\Utilities\File.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\platform\Application.h" />
+    <ClInclude Include="..\..\Platform\ApplicationMCR.h" />
+    <ClInclude Include="..\..\platform\WindowApplication.h" />
+    <ClInclude Include="..\..\platform\WindowApplication3D.h" />
+    <ClInclude Include="..\..\Platform\Win\DemoApp.h" />
+    <ClInclude Include="..\..\runtime\camera\Camera.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\FrameBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\Image.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\Renderer.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\SoftFrameBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\SoftRenderer.h" />
+    <ClInclude Include="..\..\Runtime\Graphics\WinSoftRenderer.h" />
+    <ClInclude Include="..\..\Runtime\MainMCR.h" />
+    <ClInclude Include="..\..\runtime\math\ColorRGBA.h" />
+    <ClInclude Include="..\..\runtime\math\MathUtil.h" />
+    <ClInclude Include="..\..\runtime\math\Matrix3.h" />
+    <ClInclude Include="..\..\runtime\math\Matrix4.h" />
+    <ClInclude Include="..\..\runtime\math\Precision.h" />
+    <ClInclude Include="..\..\runtime\math\Quaternion.h" />
+    <ClInclude Include="..\..\runtime\math\Random.h" />
+    <ClInclude Include="..\..\runtime\math\Rect.h" />
+    <ClInclude Include="..\..\runtime\math\Triangle3.h" />
+    <ClInclude Include="..\..\runtime\math\Vector3.h" />
+    <ClInclude Include="..\..\runtime\math\Vector4.h" />
+    <ClInclude Include="..\..\Runtime\Object\Main.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\Polyline.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\Polypoint.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\TriMesh.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\Vertex.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\Geometry.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\IndexBuffer.h" />
+    <ClInclude Include="..\..\Runtime\SceneGraph\VertexBuffer.h" />
+    <ClInclude Include="..\..\Runtime\Utilities\File.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\platform\WindowApplication.inl" />
+    <None Include="..\..\runtime\camera\Camera.inl" />
+    <None Include="..\..\Runtime\Graphics\Renderer.inl" />
+    <None Include="..\..\Runtime\Graphics\SoftRenderBuffer.inl" />
+    <None Include="..\..\Runtime\Graphics\SoftRenderer.inl" />
+    <None Include="..\..\runtime\math\Triangle3.cpp" />
+    <None Include="..\..\Runtime\SceneGraph\IndexBuffer.inl" />
+    <None Include="..\..\Runtime\SceneGraph\Polyline.inl" />
+    <None Include="..\..\Runtime\SceneGraph\TriMesh.inl" />
+    <None Include="..\..\Runtime\SceneGraph\Vertex.inl" />
+    <None Include="..\..\Runtime\SceneGraph\VertexBuffer.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ThirdParty\tinyobjloader-master\tinyobjloader.vcxproj">
+      <Project>{dbbb7385-477c-efbb-10b7-38397c363498}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
